@@ -1,2 +1,2 @@
 # project-example
-Template repo for scientific project
+Template repo for scientific research project
