@@ -12,8 +12,8 @@ this end, we implement a high-fidelity anatomical lung model based on computed-t
 a continuum poromechanical framework. Our formulation considers parameters related to the constitutive lung tissue
 model, the parenchyma permeability, and the effect of chest wall stiffness in the estimation of respiratory-system com-
 pliance and resistance. Based on this, we develop a low-fidelity model and integrate both levels of information to train
-a surrogate machine learning lung model based on multi-fidelity Gaussian process regression, comparing the perfor-
-mance with single-fidelity Gaussian process and artificial neural networks. Once trained and validated, we perform
+a surrogate machine learning lung model based on multi-fidelity Gaussian process regression, comparing the performance
+with single-fidelity Gaussian process and artificial neural networks. Once trained and validated, we perform
 a parameter sensitivity analysis and uncertainty quantification tasks on the lung response. In this sense, our results
 suggest that lung tissue elasticity parameters and the chest wall stiffness have a comparable level of influence on the
 respiratory-system compliance, while the airways resistance is mainly modulated by the parenchyma permeability,
