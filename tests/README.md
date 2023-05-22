@@ -1,6 +1,6 @@
 # Tests files
 
-Files that implement the described work.
+Code files that implement the described work.
 
 ## Files and directories
 They are listed in a sequential order:
