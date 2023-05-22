@@ -25,8 +25,8 @@ valuable for the generation of lung models, and also, in the application of simi
 relevant clinical situations
 
 ## Directories
-- `results-data`: Figures and related results from processed from raw data and tests.
-- `raw-data`: Data generated from code files.
+- `results-data`: Figures and related results from processed from `raw-data` and `tests`.
+- `raw-data`: Input data needed for simulations + data generated from `tests`.
 - `tests`:  Code files that implement the described work.
 
 ## Results
