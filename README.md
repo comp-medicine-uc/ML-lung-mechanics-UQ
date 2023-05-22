@@ -28,3 +28,11 @@ relevant clinical situations
 - `results-data`: Figures and related results from processed from raw data and tests.
 - `raw-data`: Data generated from code files.
 - `tests`:  Code files that implement the described work.
+
+## Results
+Fig 1
+Fig 2
+...
+
+## Dependencies
+In progress...
