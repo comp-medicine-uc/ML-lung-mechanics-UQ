@@ -35,4 +35,11 @@ Fig 2
 ...
 
 ## Dependencies
-In progress...
+- `FeniCS` 2019.1.0
+- `numpy`
+- `scipy`
+- `matplotlib`
+- `GPy`
+- `Emukit`
+- `os`
+- `sys`
