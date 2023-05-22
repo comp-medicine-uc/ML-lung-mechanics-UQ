@@ -30,8 +30,15 @@ relevant clinical situations
 - `tests`:  Code files that implement the described work.
 
 ## Results
-Fig 1
-Fig 2
+The main results of this research are shown below. Figure 3 shows the airway pressure, flow and volume signals predicted by high and low fidelity models of the lung during PCV simulations.
+[Fig3_HFvsLF](https://github.com/comp-medicine-uc/ML-lung-mechanics-UQ/assets/95642663/660878d7-fe65-45e4-8dc0-baa7631abe16)
+
+Figure 3. Simulation of lungs under PCV ventilation model. Physiological signals that describe the time evolution of (a) airways pressure, (b) flow, and (c) volume (c) are shown for the high-fidelity (solid lines) and low-fidelity model (dashed lines).
+
+![Fig4_blandaltman_c](https://github.com/comp-medicine-uc/ML-lung-mechanics-UQ/assets/95642663/f8e77dc1-d411-42f2-a1ec-3bbac93653cb)
+
+Figure 4. Simulation of lungs under PCV ventilation model. Physiological signals that describe the time evolution of (a) airways pressure, (b) flow, and (c) volume (c) are shown for the high-fidelity (solid lines) and low-fidelity model (dashed lines).
+
 ...
 
 ## Dependencies
