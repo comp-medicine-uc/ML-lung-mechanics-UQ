@@ -1,28 +1,9 @@
-# Machine-learning modeling of lung mechanics: assessing the variability and propagation of uncertainty in pulmonary compliance and resistance
+# Machine learning modeling of lung mechanics: assessing the variability and propagation of uncertainty in respiratory-system compliance and airway resistance
 
-This is the front page README.md
+Leverage of machine learning techniques to construct predictive lung function models informed by finite element simulations.
 
 ## Abstract
-In mechanical ventilation therapy, respiratory mechanics is traditionally evaluated in terms of the respiratory-system
-compliance and airways resistance. Clinical evidence has shown that these physiological parameters present a large
-variability and heterogeneity among patients, which motivates the creation of models that can efficiently predict the
-lung function to personalize ventilator settings during treatment. In this work, we leverage machine learning tech-
-niques to accelerate the predictions of lung mechanics, to further study the lung response via uncertainty analysis. To
-this end, we implement a high-fidelity anatomical lung model based on computed-tomography images, derived from
-a continuum poromechanical framework. Our formulation considers parameters related to the constitutive lung tissue
-model, the parenchyma permeability, and the effect of chest wall stiffness in the estimation of respiratory-system com-
-pliance and resistance. Based on this, we develop a low-fidelity model and integrate both levels of information to train
-a surrogate machine learning lung model based on multi-fidelity Gaussian process regression, comparing the performance
-with single-fidelity Gaussian process and artificial neural networks. Once trained and validated, we perform
-a parameter sensitivity analysis and uncertainty quantification tasks on the lung response. In this sense, our results
-suggest that lung tissue elasticity parameters and the chest wall stiffness have a comparable level of influence on the
-respiratory-system compliance, while the airways resistance is mainly modulated by the parenchyma permeability,
-with both physiological variables showing non-linear relations. Regarding the machine learning methodology, the
-constructed multi-fidelity GP surrogate model outperformed the single-fidelity model and the neural network, high-
-lighting the desirability of adopting approaches that combine different levels of fidelity to obtain accurate and efficient
-estimates in biomechanical simulations. We expect that the machine learning methods and results shown here will be
-valuable for the generation of lung models, and also, in the application of similar biomechanical models to support
-relevant clinical situations
+The response of patients to mechanical ventilation is traditionally evaluated in terms of respiratory-system compliance and airway resistance. Clinical evidence has shown high variability in these parameters, highlighting the difficulty to predict them before the start of ventilation therapy. This motivates the creation of computational models that can connect structural and tissue features with lung mechanics. Our objective is to leverage machine learning (ML) techniques to construct predictive lung function models that are informed by non-linear finite element simulations. To this end, we revisit a continuum poromechanical formulation of the lungs suitable for determining respiratory-system compliance and airway resistance. Based on this framework, we create high-fidelity non-linear finite element models of human lungs from medical images. We also develop a low-fidelity model based on an idealized sphere geometry. We then use these models to train and validate three ML architectures: single-fidelity and multi-fidelity Gaussian process regression, and artificial neural networks. We use the best ML model in the prediction of lung function and to further study the sensitivity of lung mechanics to variations in tissue structural parameters and boundary conditions via sensitivity analysis and forward uncertainty quantification. The low-fidelity model delivers a lung response very close to that predicted by high-fidelity simulations and at a fraction of the computational time. Regarding the trained ML models, the multi-fidelity GP model consistently delivers better accuracy than the single-fidelity GP and neural network models in estimating respiratory-system compliance and resistance ($\sim R^2$). In terms of computational efficiency, our ML model delivers a massive speed-up of $\sim970,000\times$ with respect to the high-fidelity simulations. Regarding lung function, we observed an almost matched and non-linear behavior between some of the structural parameters and chest wall stiffness with compliance. Also, we observed a strong modulation of airways resistance with tissue permeability. Our findings suggest the relevance of certain constitutive lung tissue model parameters and boundary conditions in the respiratory-system response and airway resistance. Furthermore, we highlight the advantages of adopting a multi-fidelity ML approach that combines data from different levels to obtain accurate and efficient estimates in biomechanical simulations. We expect that the methods and results shown here will be valuable for generating lung models and similar organs to support relevant clinical situations.
 
 ## Directories
 - `results-data`: Figures and related results from processed from `raw-data` and `tests`.
