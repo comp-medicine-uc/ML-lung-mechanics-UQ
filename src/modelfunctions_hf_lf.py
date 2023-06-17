@@ -5,25 +5,21 @@ Created on Sun Apr 11 16:14:09 2021
 
 @author: ubuntu
 """
-from ast import Interactive
+
 import meshio
-import dolfin
-from dolfin import *    
-#import mshr 
+import dolfin   
 import os
 import matplotlib.pyplot as plt
 import numpy as np
-
 import os
-name = os.path.basename(os.getcwd())
-name = int(name)
-ppp = name - 1
-#print(name, type(name))
+import time
 
-XXX = np.load('X.npy')
+from dolfin import *
+from ast import Interactive 
 
-#%%
-def solve_poroelasticity( output_dir,model,per,KKresortee,ii,C_bir2019,Beta_bir2019,C1_bir2019,C3_bir2019):
+
+def solve_poroelasticity(output_dir,model,per,KKresortee,ii,C_bir2019,Beta_bir2019,C1_bir2019,C3_bir2019):
+    
     mesh = dolfin.Mesh()
     hdf = dolfin.HDF5File(mesh.mpi_comm(), 'mesh.h5', "r")
     hdf.read(mesh, "/mesh", False)
