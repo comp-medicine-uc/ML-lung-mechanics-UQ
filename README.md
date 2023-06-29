@@ -8,6 +8,7 @@ The response of patients to mechanical ventilation is traditionally evaluated in
 ## Directories
 - `results-data`: Figures and related results from processed from `raw-data` and `tests`.
 - `raw-data`: Input data needed for simulations + data generated from `tests`.
+- `src`: Files that implement functions used in simulations.
 - `tests`:  Code files that implement the described work.
 
 ## Results
