@@ -25,7 +25,7 @@ Figure 1. Construction of high-fidelity and low-fidelity lung finite-element mod
 
 
 
-![fig02_HFvsLF](https://github.com/comp-medicine-uc/ML-lung-mechanics-UQ/assets/95642663/bed69591-09de-4d43-b995-d2e176862221)
+![fig02_HFvsLF](results-data/fig02_HFvsLF.png)
 
 Figure 2. Simulation of lungs under PCV ventilation model. Physiological signals that describe the time evolution of (a) airways pressure, (b) flow, and (c) volume (c) are shown for the high-fidelity (solid lines) and low-fidelity model (dashed lines).
 
